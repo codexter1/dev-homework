@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form class="submit" action="index.html" method="post">
+    <form id="submit" action="index.html" method="post">
       <header>
         <h1>Micro Blog</h1>
       </header>
-      <input id="textEnter" type="text">
-      <button type="button" name="button">Post</button>
+      <input id="textEnter" type="text" name="blog post" placeholder="What's on your mind?" minlength="2">
+      <button id "press" type="button" name="blog post" form="submit">Post</button>
     </form>
+    <ul id "posts">
+      <li>styling</li>
+      <li>more of that</li>
+    </ul>
     <script src="app.js"></script>
   </body>
 </html>

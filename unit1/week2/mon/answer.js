@@ -119,3 +119,16 @@ for(i = 0; i < bondFilms.length; i++) {
 }
 
 console.log(oddBonds);
+
+const bondSum = [];
+
+for(i = 0; i < bondFilms.length; i++) {
+  let newNum = `'00${bondFilms[i].gross}`
+  let finalNum = parseInt(newNum);
+  bondSum.push(finalNum);
+  for (i = 0; i < bondSum.length; i++) {
+    bondSum[i] += bondSum[i+1]
+  }
+}
+
+console.log(bondSum);

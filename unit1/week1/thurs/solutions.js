@@ -15,19 +15,25 @@ const isPal = (string) => {
 isPal('Palindrone'); //is funny
 
 //digit sum
-let add = (a, b) => {
-  return a + b;
-}
-// const sumDigits = (num) => {
-//   let arr = `${num}`;
-//   arr = arr.split('');
-//   console.log(arr);
-//   return arr.reduce(add, 0)
-//   }
   const sumDigits = (num) => {
-    return num.toString().split().reduce(add,0)
-    }
+    return num.toString().split('').map(Number).reduce(sum = (a,b) => {
+      return a + b;
+    },0)
+}
 
 console.log(sumDigits(123));
 
-//console.log(arr);
+//pythagoras
+const calculateSide = (sideA, sideB) => {
+    let sideC = Math.pow(sideA,2) + Math.pow(sideA,2)
+    return sideC
+}
+
+console.log(calculateSide(5,5));
+
+//Sum Array
+const sumArray = (array) => {
+  //return sum of array
+}
+
+console.log(sumArray[1,2,3,4,]);
